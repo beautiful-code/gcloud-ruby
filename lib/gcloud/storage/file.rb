@@ -719,7 +719,7 @@ module Gcloud
         def signature_str options
           [options[:method], options[:content_md5],
            options[:content_type], options[:expires],
-           ext_path].join "\n"
+           ext_path.gsub(' ','%20')].join "\n"
         end
 
         def determine_signing_key options = {}
