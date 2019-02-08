@@ -1,0 +1,23 @@
+AllCops:
+  Exclude:
+    - "google-cloud-monitoring.gemspec"
+    - "lib/google/**/*"
+    - "Rakefile"
+    - "test/**/*"
+    - "acceptance/**/*"
+  TargetRubyVersion: 2.2
+
+Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-monitoring.rb"
+
+Layout/EmptyLines: # for the extra line between copyright and code
+  Enabled: false

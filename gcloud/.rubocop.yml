@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:
+    - "gcloud.gemspec"
+    - "Rakefile"
+    - "test/**/*"
+  TargetRubyVersion: 2.2
+
+Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+Layout/EmptyLines: # for the extra line between copyright and code
+  Enabled: false

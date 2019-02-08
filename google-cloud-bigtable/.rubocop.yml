@@ -1,0 +1,50 @@
+AllCops:
+  Exclude:
+    - "google-cloud-bigtable.gemspec"
+    - "lib/google-cloud-bigtable.rb"
+    - "lib/google/bigtable/**/*"
+    - "lib/google/cloud/bigtable.rb"
+    - "lib/google/cloud/bigtable/credentials.rb"
+    - "lib/google/cloud/bigtable/admin.rb"
+    - "lib/google/cloud/bigtable/admin/**/*"
+    - "lib/google/cloud/bigtable/v2.rb"
+    - "lib/google/cloud/bigtable/v2/**/*"
+    - "Rakefile"
+    - "test/**/*"
+    - "acceptance/**/*"
+    - "samples/**/*"
+  TargetRubyVersion: 2.2
+
+Documentation:
+  Enabled: true
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+Style/NumericLiterals:
+  Enabled: false
+Style/TrivialAccessors:
+  Enabled: false
+Metrics/LineLength:
+  Max: 80
+  IgnoredPatterns: ['(\A|\s)#']
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/PerceivedComplexity:
+  Max: 10
+Metrics/AbcSize:
+  Max: 25
+Metrics/ClassLength:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 30
+Metrics/ParameterLists:
+  Enabled: false
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+Layout/EmptyLines: # for the extra line between copyright and code
+  Enabled: false
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-bigtable.rb"

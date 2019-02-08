@@ -1,0 +1,53 @@
+AllCops:
+  Exclude:
+    - "acceptance/**/*"
+    - "integration/**/*"
+    - "google-cloud-logging.gemspec"
+    - "lib/google/logging/**/*"
+    - "lib/google/cloud/logging/v2.rb"
+    - "lib/google/cloud/logging/v2/**/*"
+    - "Rakefile"
+    - "support/**/*"
+    - "test/**/*"
+  TargetRubyVersion: 2.2
+
+Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+Style/NumericLiterals:
+  Enabled: false
+Style/CaseEquality:
+  Exclude:
+    - "lib/google/cloud/logging/middleware.rb"
+Metrics/CyclomaticComplexity:
+  Max: 12
+Metrics/PerceivedComplexity:
+  Max: 12
+Metrics/AbcSize:
+  Max: 28
+Metrics/BlockLength:
+  Exclude:
+    - "lib/google-cloud-logging.rb"
+Metrics/ClassLength:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 25
+Metrics/ParameterLists:
+  Enabled: false
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+Layout/EmptyLines: # for the extra line between copyright and code
+  Enabled: false
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-logging.rb"
+Lint/RescueException:
+  Exclude:
+    - "lib/google/cloud/logging/rails.rb"
